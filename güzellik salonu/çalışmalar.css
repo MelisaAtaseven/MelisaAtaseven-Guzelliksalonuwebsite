@@ -1,0 +1,63 @@
+html{
+	background: url(ışık.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+nav {
+	text-align:left;
+}
+nav{
+	border-top:  3px solid #f9e1f3;
+	background-color: white;
+	text-align: left;
+	width: 100%;
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+}
+nav li a{
+	display: block;
+	padding: 15px 20px;
+	font:15px tahoma, arial;
+	color:black;
+	text-decoration: none;
+}
+nav li a:hover {
+	background-color:#f9e1f3; 
+	transition-duration: 0.5s;
+}
+nav li ul{
+	text-align:left;
+	display: none;
+	position: absolute;
+	background-color:white;
+	width: 170px;
+}
+nav li:hover ul{
+	display: block;
+}
+nav li ul li{
+	display: block;
+}
+.gallery{
+	margin: 5px 5px;
+}
+.gallery img{
+	width: 300px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
